@@ -2,7 +2,13 @@ package org.example;
 
 public class Dev {
 
+    private Laptop laptop;
+
+    public void setLaptop(final Laptop laptop) {
+        this.laptop = laptop;
+    }
+
     public void compile() {
-        System.out.println("Dev compiling ...");
+        this.laptop.compile();
     }
  }

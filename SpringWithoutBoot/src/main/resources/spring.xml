@@ -6,8 +6,13 @@
 
 
 
-    <bean id="dev" class="org.example.Dev">
+    <bean id="dev1" class="org.example.Dev">
+        <property name="laptop" ref="lap1">
+        </property>
 
+    </bean>
+
+    <bean id="lap1" class="org.example.Laptop">
     </bean>
 
 
