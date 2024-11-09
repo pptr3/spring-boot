@@ -7,8 +7,9 @@
 
 
     <bean id="dev1" class="org.example.Dev">
-        <property name="laptop" ref="lap1">
-        </property>
+        <constructor-arg index="0" ref="lap1">
+
+        </constructor-arg>
 
     </bean>
 
