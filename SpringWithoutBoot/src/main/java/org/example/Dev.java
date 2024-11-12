@@ -1,16 +1,16 @@
 package org.example;
 
+
 public class Dev {
 
-    private final Laptop laptop;
-
-
-    public Dev(Laptop laptop) {
-        this.laptop = laptop;
-    }
+    private Computer com;
 
 
     public void compile() {
-        this.laptop.compile();
+        this.com.compile();
     }
- }
+
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+}

@@ -6,15 +6,16 @@
 
 
 
-    <bean id="dev1" class="org.example.Dev">
-        <constructor-arg index="0" ref="lap1">
-
-        </constructor-arg>
+    <bean id="dev" class="org.example.Dev" autowire="byName">
 
     </bean>
 
-    <bean id="lap1" class="org.example.Laptop">
+    <bean name="com1" id="lap1" class="org.example.Laptop">
     </bean>
+
+    <bean name="com2" id="desk1" class="org.example.Desktop">
+    </bean>
+
 
 
 </beans>

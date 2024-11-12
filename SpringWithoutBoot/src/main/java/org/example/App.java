@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args ) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Laptop dev = context.getBean(Laptop.class);
+        Dev dev = context.getBean(Dev.class);
         dev.compile();
     }
 }
