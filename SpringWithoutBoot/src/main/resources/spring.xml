@@ -6,11 +6,11 @@
 
 
 
-    <bean id="dev" class="org.example.Dev" autowire="byName">
+    <bean id="dev" class="org.example.Dev" autowire="byType">
 
     </bean>
 
-    <bean name="com1" id="lap1" class="org.example.Laptop">
+    <bean name="com1" id="lap1" class="org.example.Laptop" primary="true">
     </bean>
 
     <bean name="com2" id="desk1" class="org.example.Desktop">
